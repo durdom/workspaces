@@ -1,0 +1,48 @@
+2026-10-16 02:19:15.478Z: Host information
+2026-10-16 02:19:15.478Z: ----------------
+2026-10-16 02:19:15.478Z: OS: Ubuntu 22.04.5 LTS (stable release)
+2026-10-16 02:19:15.478Z: Image details: https://github.com/github/codespaces-host-images/blob/main/README.md
+2026-10-16 02:19:15.478Z: ----------------
+
+=================================================================================
+2026-10-16 02:19:15.481Z: Configuration starting...
+2026-10-16 02:19:15.494Z: Cloning...
+2026-10-16 02:19:16.191Z: Using image: mcr.microsoft.com/devcontainers/universal
+
+=================================================================================
+2026-10-16 02:19:16.210Z: Creating container...
+
+=================================================================================
+2026-10-16 02:19:16.992Z: Running blocking commands...
+2026-10-16 02:19:17.046Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/codespaces-blank --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --expect-existing-container --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+2026-10-16 02:19:17.444Z: @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1064-azure x64.
+2026-10-16 02:19:18.037Z: Outcome: success User: codespace WorkspaceFolder: /workspaces/codespaces-blank
+2026-10-16 02:19:18.060Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2026-10-16 02:19:18.136Z: Configuring codespace...
+2026-10-16 02:19:18.136Z: Running oryx...
+
+=================================================================================
+2026-10-16 02:19:34.976Z: Running commands...
+2026-10-16 02:19:35.003Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/codespaces-blank --expect-existing-container --skip-post-attach --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+2026-10-16 02:19:35.278Z: @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1064-azure x64.
+2026-10-16 02:19:35.811Z: Running the postCreateCommand from Feature 'ghcr.io/devcontainers/features/git-lfs:1'...
+
+2026-10-16 02:19:35.811Z: /usr/local/share/pull-git-lfs-artifacts.sh
+2026-10-16 02:19:35.892Z: Fetching git lfs artifacts...
+2026-10-16 02:19:37.491Z: (!) Skipping automatic 'git lfs pull' because no git lfs files were detected
+2026-10-16 02:19:37.515Z: Running the postStartCommand from Feature 'ghcr.io/devcontainers/features/copilot-cli:1'...
+
+2026-10-16 02:19:37.520Z: [ -f /etc/devcontainer-copilot-cli/auto-update ] && copilot update || ********
+2026-10-16 02:19:52.478Z: Checking for updates...
+2026-10-16 02:19:52.783Z: Checking GitHub for the latest release...
+2026-10-16 02:19:53.061Z: Update available: v1.0.98 (current: 1.0.83).
+Downloading update package...
+2026-10-16 02:19:55.111Z: Download complete. Installing...
+2026-10-16 02:20:00.864Z: Copilot CLI version 1.0.98 installed.
+2026-10-16 02:20:00.993Z: Outcome: success User: codespace WorkspaceFolder: /workspaces/codespaces-blank
+2026-10-16 02:20:01.004Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2026-10-16 02:20:01.046Z: Finished configuring codespace.

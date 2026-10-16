@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {
+      "name": "Running postCreateCommand...",
+      "status": "succeeded",
+      "stepDetail": "/usr/local/share/pull-git-lfs-artifacts.sh"
+    },
+    {
+      "name": "Running postStartCommand...",
+      "status": "succeeded",
+      "stepDetail": "[ -f /etc/devcontainer-copilot-cli/auto-update ] && copilot update || ********"
+    }
+  ]
+}

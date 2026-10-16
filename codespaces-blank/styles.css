@@ -1,0 +1,195 @@
+/* css for touchtone project David Bohn */
+
+/*  start of css stuff */
+:root 
+{
+  --primary: #2F6F4E;
+  --accent: #E07A5F;
+  --text: #333333;
+  --bg: #F8F6F3;
+  --white: #ffffff;
+  --light-gray: #e8e8e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+  font-size: 16px;
+}
+/* Font stuff */
+h1, h2, h3, h4 
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+h1 { font-size: 1.5rem; 
+}
+h2 { font-size: 1.4rem; 
+}
+h3 { font-size: 1.2rem; 
+}
+
+p 
+{
+  margin-bottom: 1rem;
+}
+/* space rules here */
+header, main, footer, section, nav 
+{
+  padding: 1.25rem;
+}
+
+section 
+{
+  margin-bottom: 1.5rem;
+}
+/* header section options */
+header 
+{
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-gray);
+  padding: 0.75rem 1.25rem;
+}
+
+.logo 
+{
+  width: 70px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+/* stuff with the navigation */
+nav 
+{
+  background-color: var(--primary);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav a 
+{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+ 
+nav a:hover 
+{
+  color: var(--accent);
+}
+ /* all the button settings */
+.btn, button, input[type="submit"] 
+{
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover, button:hover, input[type="submit"]:hover 
+{
+  background-color: #c9654f;
+}
+/* form settings for forms */
+form 
+{
+  background-color: var(--white);
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+label 
+{
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+input, textarea, select 
+{
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset 
+{
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend 
+{
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0 0.5rem;
+}
+
+img 
+{
+  max-width: 100%;
+  height: auto;
+}
+
+footer 
+{
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
+/* footer stuff */
+footer a {
+  color: var(--white);
+}
+/* my simple mobile cell response code */
+@media (min-width: 768px) 
+{
+  h1 { font-size: 2rem; 
+}
+  h2 { font-size: 1.6rem; 
+}
+
+  nav 
+  {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  section 
+  {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* End of Css for touchtone */
