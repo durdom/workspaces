@@ -98,31 +98,11 @@ Get back to your project
 Once the folder is open you should see your files (codespaces-blank/, script.js, .gitignore, etc.).
 Quick status check
 
-After you open the folder, run this in the terminal so we know where things stand:
 
-git status
-git log --oneline -3
-
-Paste the output and I’ll help you finish the push or verify the live site.
-You
-
-Refer to the following content:
-Grok
-Worked for 3s
-
-You’re in the right place — codespaces-blank/contact.html is open and the terminal is in that folder.
-Current state of the live site
-
-I can re-check https://durdom.github.io/workspaces/codespaces-blank/ if you want, but from last time the JavaScript still wasn’t linked.
-To make the form validation actually work
-
-    Add the script tag at the bottom of contact.html (and any other page that needs it), just before </body>:
 
 <script src="../script.js"></script>
 
-(Use ../script.js because script.js is one folder up, in the repo root.)
 
-    Fix the broken HTML in the form (the option tags and missing quotes). For example, change the select section to:
 
 <select name="interest">
   <option value="volunteer">Volunteer</option>
