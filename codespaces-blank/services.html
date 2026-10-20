@@ -50,56 +50,6 @@
   <source src="Video/rescue-message_c.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-Grok
-Worked for 4s
-
-That error means your local branch is behind the remote (from the earlier force-push). VS Code wants you to pull first.
-Fix it in the terminal
-
-Open the terminal and run:
-
-git pull --rebase origin main
-git push
-
-If it complains about unstaged changes again:
-
-git stash -u
-git pull --rebase origin main
-git push
-git stash pop
-
-Or use the buttons in the dialog
-
-    Click Open Git Log or Show Command Output to see the exact message.
-    Then in the Source Control panel, use the Pull button (or the ... menu → Pull), then try Commit & Push again.
-
-After a successful push, refresh the live site:
-
-https://durdom.github.io/workspaces/codespaces-blank/
-
-Paste the terminal output if the pull/rebase still fails.
-You
-
-Refer to the following content:
-2 / 2Message 2 of 2
-Grok
-Worked for 3s
-
-It looks like you started a fresh Codespace (or the previous one reset). The welcome screen is showing and the terminal is ready at /workspaces/workspaces.
-Get back to your project
-
-    In the Explorer sidebar (left), click the folder icon or File → Open Folder.
-    Select /workspaces/workspaces and open it.
-    Or in the terminal just run:
-
-    cd /workspaces/workspaces
-    code .
-
-Once the folder is open you should see your files (codespaces-blank/, script.js, .gitignore, etc.).
-Quick status check
-
-
-
 <script src="../script.js"></script>
 
 
@@ -110,7 +60,6 @@ Quick status check
   <option value="adoption">Adoption Information</option>
 </select>
 
-    Also add an empty container somewhere on the page if you want the volunteer role buttons from showRoles():
 
 <div id="role-box"></div>
 
