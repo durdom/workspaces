@@ -157,6 +157,14 @@ img
   max-width: 100%;
   height: auto;
 }
+//* adding option for oversized image *//
+.about-image 
+{
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
 
 footer 
 {
